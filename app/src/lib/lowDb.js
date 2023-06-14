@@ -25,7 +25,6 @@ export async function dbConnect() {
     console.log("DB INIT!")
   }
 
-  await cached.conn.read()
   cached.conn.data ||= {messageHistory: {}}
 
   return cached.conn
